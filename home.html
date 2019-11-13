@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+    <title> My First Website </title>
+</head>
+<body>
+
+    <div class = "center">
+    <div class = "first-header">
+    <h1>The first entry</h1>
+    </div>
+    </div>
+   
+    <!-- adding whitespace -->
+    <div class = "whitespace"></div>
+    
+    
+    <div class = 'center'>
+    <div class = "first-text">
+    <p>This is the first bit of text that I'm adding to my website</p>
+    </div>
+    </div>
+    
+     
+    
+    <style>
+    .first-header {
+        color: blue;
+        text-align: center;
+        border: 3px solid black;
+        background-color:yellow;
+        width:400px;
+        height:200px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        
+        
+    }
+        
+    </style>
+    
+    <style>
+        .first-text {
+            color: purple;
+            font-size:40px;
+            
+        }
+    </style>
+    
+    <!--creating whitespace-->
+    <div class = "whitespace"></div>
+    
+    <!--creating two textboxes and aligning the text inside-->
+        <div class = "first"></div>
+            <div class = "textbox">Textbox</div>
+            <div class = "textbox">Box 2</div>
+            <style>
+                .textbox {
+                    border: 3px solid #aaa;
+                    background-color: #eee;
+                    height: 200px;
+                    width: 200px;
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 10px;
+                    font-size: 30px;
+                    margin bottom: 20px;
+    
+                }
+            </style>
+        <!--creating a class for centering elements-->   
+            <style>
+                .center {
+                    display:flex;
+                    justify-content:center;
+                }
+            </style>
+        
+        <!--creating and positioning the gameboard-->
+        <div class = "center">
+        <div class = "second">
+        <div class = "line"></div>
+            <style>
+                .line {
+                    
+                    height:200px;
+                    width:0.5px;
+                    border:1px dotted black;
+                    
+                
+                }
+                
+            </style>
+        </div>
+        </div>
+    
+    <!--creating positioning for the boxes and the gameboard-->
+    <div class="first"></div>
+    
+    <!-- centering the 'second' class-->
+    <div class = "center">
+    <div class="second"></div>
+    </div>
+    
+    <style>
+         .first {
+         position:absolute;
+         ;
+         
+        }
+        .second{
+    	position: relative;
+        top: 100px;
+        bottom: 100px
+        left: 740px;
+    </style>
+    
+    
+    
+    <!--creating whitespace -->
+    <div class = "second">
+        <div class = "whitespace">
+            <style>
+                .whitespace {
+                    border: 2px solid white;
+                    height:200px;
+                    width:0px;
+                }
+            </style>
+        </div>
+    </div>
+    
+    <!-- Demonstrating CSS Selectors and The Cascade, centering the text-->
+    <div class = 'center'>
+    <div class = 'cascade'><p>This text is orange because of how The Cascade works. CSS takes the instructions that are closer to the bottom and ignores any contradicting instructions above.</p></div></div>
+        <style>
+            .cascade{
+                color:green;
+                
+                color:orange;
+                margin-left:5px;
+            }
+        </style>
+        
+        <div class = 'whitespace'></div>
+        
+        <!-- Demonstrating !important -->
+        <div class = 'center'>       
+        <div class = 'important'><p>This text is green because of how the !important function works. It prioritizes the instruction that is given the !important tag, even if it does not follow the order of the Cascade</p></div></div>
+        
+    
+        
+        <style>
+            .important{
+                border: 2px solid red !important;
+                color:green !important;
+                
+                border:5px dashed green;
+                color: red;
+            }
+            
+        </style>
+        <div class = 'whitespace'></div>
+        
+        
+        <!-- Demonstrating ID's -->
+        <div class = 'center'>
+        <div id = 'id' class = 'class'><p>This text is red because ID selectors take priority over class selectors, regardless of the cascade. The instructions given under the ID selector will take effect over the instructions given by the class selector.</p></div></div>
+        
+        <style>
+        #id {
+            color:red;
+          
+        }
+        .class {
+            color:yellow;
+            
+        }
+        
+        </style>
+    <div class = 'whitespace'></div>
+    
+</body>
